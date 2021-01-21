@@ -5,3 +5,8 @@ df <- tibble(
   c = rnorm(10),
   d = rnorm(10)
 )
+out <- vector("double", length(df))
+for (i in seq_along(df)) {
+  out[[i]] <- mean(df[[i]])
+}
+out
