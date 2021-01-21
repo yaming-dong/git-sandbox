@@ -10,3 +10,8 @@ for (i in seq_along(df)) {
   out[[i]] <- mean(df[[i]])
 }
 out
+for (i in seq_along(df)) {
+  cat("Running with i ==", i, "\n")
+  out[[i]] <- mean(df[[i]])
+}
+out
